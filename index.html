@@ -17,6 +17,7 @@
             line-height: 1.6;
             color: #333;
             background-color: #f8f9fa;
+            scroll-behavior: smooth;
         }
 
         header {
@@ -47,6 +48,14 @@
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         h1 {
@@ -86,12 +95,19 @@
             padding: 0.5rem 1rem;
             border-radius: 20px;
             font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+
+        .skill-tag:hover {
+            background-color: #0d47a1;
+            color: white;
         }
 
         .experience-card {
             margin-bottom: 2rem;
             padding-bottom: 1rem;
             border-bottom: 1px solid #eee;
+            cursor: pointer;
         }
 
         .experience-card:last-child {
@@ -163,6 +179,32 @@
             color: #0d47a1;
         }
 
+        .form-control {
+            width: 300px;
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-control:focus {
+            border-color: #0d47a1;
+        }
+
+        .submit-btn {
+            background-color: #1a237e;
+            color: white;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #0d47a1;
+        }
+
         @media (max-width: 768px) {
             .experience-header {
                 flex-direction: column;
@@ -191,7 +233,7 @@
         <section id="about">
             <h2>About Me</h2>
             <div class="bio">
-                <p>I am a Computer Science and Finance student at Muhlenberg College with a deep passion for artificial intelligence, generative AI, large language models (LLMs), and their applications in finance. Currently maintaining a 3.6 GPA, I combine my technical expertise in AI with a solid understanding of financial systems to explore how these technologies can transform industries. My focus is on leveraging generative AI to create innovative financial solutions, improve decision-making processes, and enhance user experiences. As a nationally ranked D3 wrestler, I bring the same drive and discipline to both my studies and my goal of making a significant impact at the intersection of AI and finance..</p>
+                <p>I am a Computer Science and Finance student at Muhlenberg College with a deep passion for artificial intelligence, generative AI, large language models (LLMs), and their applications in finance. Currently maintaining a 3.6 GPA, I combine my technical expertise in AI with a solid understanding of financial systems to explore how these technologies can transform industries. My focus is on leveraging generative AI to create innovative financial solutions, improve decision-making processes, and enhance user experiences. As a nationally ranked D3 wrestler, I bring the same drive and discipline to both my studies and my goal of making a significant impact at the intersection of AI and finance.</p>
             </div>
         </section>
 
@@ -266,7 +308,33 @@
                 <a href="https://www.linkedin.com/in/andrew-loniewski-132a40287/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="mailto:aloniewski635@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
+
+            <!-- Contact Form -->
+            <form>
+                <input type="text" class="form-control" placeholder="Your Name" required>
+                <input type="email" class="form-control" placeholder="Your Email" required>
+                <textarea class="form-control" placeholder="Your Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
         </section>
     </div>
+
+    <script>
+        // Scroll animation for sections
+        const sections = document.querySelectorAll('section');
+        window.addEventListener('scroll', () => {
+            sections.forEach(section => {
+                if (section.getBoundingClientRect().top <= window.innerHeight / 1.5) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+
+        // Form submission (dummy action)
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Message sent successfully!');
+        });
+    </script>
 </body>
 </html>
