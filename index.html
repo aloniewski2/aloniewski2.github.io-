@@ -17,7 +17,6 @@
             line-height: 1.6;
             color: #333;
             background-color: #f8f9fa;
-            scroll-behavior: smooth;
         }
 
         header {
@@ -48,14 +47,6 @@
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            opacity: 0;
-            transform: translateY(50px);
-            transition: opacity 0.5s, transform 0.5s;
-        }
-
-        section.visible {
-            opacity: 1;
-            transform: translateY(0);
         }
 
         h1 {
@@ -95,19 +86,12 @@
             padding: 0.5rem 1rem;
             border-radius: 20px;
             font-size: 0.9rem;
-            transition: background-color 0.3s;
-        }
-
-        .skill-tag:hover {
-            background-color: #0d47a1;
-            color: white;
         }
 
         .experience-card {
             margin-bottom: 2rem;
             padding-bottom: 1rem;
             border-bottom: 1px solid #eee;
-            cursor: pointer;
         }
 
         .experience-card:last-child {
@@ -162,10 +146,6 @@
             gap: 0.5rem;
         }
 
-        .contact-info i {
-            font-size: 1.5rem; /* Adjust the size of the icons */
-        }
-
         .social-links {
             display: flex;
             justify-content: center;
@@ -200,10 +180,10 @@
     <header>
         <img src="pfp.jpeg" alt="Andrew Loniewski" class="profile-img">
         <h1>Andrew Loniewski</h1>
-        <p class="subtitle">Computer Science & Finance Student | NCAA Wrestler</p>
+        <p class="subtitle">Computer Science & Finance Student | Division III Wrestler</p>
         <div class="contact-info">
             <a href="mailto:aloniewski635@gmail.com"><i class="fas fa-envelope"></i> aloniewski635@gmail.com</a>
-            <a href="https://www.linkedin.com/in/andrew-loniewski-132a40287/" target="_blank"><i class="fab fa-linkedin"></i> andrew-loniewski</a>
+            <a href="tel:9086740932"><i class="fas fa-phone"></i> (908) 674-0932</a>
         </div>
     </header>
 
@@ -211,7 +191,7 @@
         <section id="about">
             <h2>About Me</h2>
             <div class="bio">
-                <p>I am a Computer Science and Finance student at Muhlenberg College with a deep passion for artificial intelligence, generative AI, large language models (LLMs), and their applications in finance. I combine my technical skill in AI with a solid understanding of financial systems to explore how these technologies can transform industries. My focus is on leveraging generative AI to create innovative financial solutions, improve decision-making processes, and enhance user experiences. As a nationally ranked D3 wrestler, I bring the same drive and discipline to both my studies and my goal of making a significant impact at the intersection of AI and finance.</p>
+                <p>I am a Computer Science and Finance student at Muhlenberg College with a strong passion for artificial intelligence and data science. Currently maintaining a 3.6 GPA, I combine technical expertise with financial acumen while also excelling as a nationally ranked D3 wrestler. My goal is to leverage cutting-edge technologies to create innovative solutions at the intersection of finance and computer science.</p>
             </div>
         </section>
 
@@ -227,8 +207,6 @@
                 <div class="skill-tag">Pygame</div>
                 <div class="skill-tag">Plotly</div>
                 <div class="skill-tag">Matplotlib</div>
-                <div class="skill-tag">CSS</div>
-                <div class="skill-tag">HTML</div>
             </div>
         </section>
 
@@ -258,13 +236,35 @@
             </div>
         </section>
 
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <span class="experience-title">
+                        Stock Portfolio and Predictor Web App
+                        <a href="https://github.com/aloniewski2/Stock_Predictor" target="_blank">
+                            <img src="website/GitHub-Logo.wine.png"style="width: 20px; height: 20px; margin-left: 8px; vertical-align: middle;">
+                        </a>
+                    </span>
+                    <span class="experience-date">November 2024 - Present</span>
+                </div>
+                <ul>
+                    <li>Developed a Python Flask web app enabling users to manage a virtual stock portfolio</li>
+                    <li>Implemented a machine learning model using scikit-learn to predict future stock prices</li>
+                    <li>Utilized yfinance API for real-time stock data and charting of historical performance</li>
+                    <li>Features include adding/editing portfolio holdings, stock analytics, setting price alerts, and stock forecasts</li>
+                </ul>
+            </div>
+        </section>
+        
+    
         <section id="achievements">
             <h2>Achievements</h2>
             <ul class="achievements">
                 <li>Top 25 ranked D3 college wrestler in the country (26-9 record)</li>
                 <li>NWCA Scholar All-American</li>
-                <li>Dean's List</li>
-                <li>Member of the Computer Science Club</li>
+                <li>2024 Recipient of the Freshman of the Year Award and MVP from Muhlenberg Wrestling</li>
+                <li>3.6 GPA in Computer Science and Finance double major</li>
             </ul>
         </section>
 
@@ -288,17 +288,5 @@
             </div>
         </section>
     </div>
-
-    <script>
-        // Scroll animation for sections
-        const sections = document.querySelectorAll('section');
-        window.addEventListener('scroll', () => {
-            sections.forEach(section => {
-                if (section.getBoundingClientRect().top <= window.innerHeight / 1.5) {
-                    section.classList.add('visible');
-                }
-            });
-        });
-    </script>
 </body>
 </html>
