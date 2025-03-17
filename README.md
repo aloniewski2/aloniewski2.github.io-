@@ -8,19 +8,23 @@ This is a personal portfolio website for myself. I am a Computer Science and Fin
 - **CSS** - Styling and layout
 - **Font Awesome** - Icons for contact and social media links
 
-## 🌍 Live Demo
-🔗 **[Deployed Website](#)**  
-*(Replace `#` with your actual hosted website URL, such as GitHub Pages, Netlify, or Vercel.)*
+## Live Demo
+**https://aloniewski2.github.io/aloniewski2.github.io-/**  
 
-## 🚀 Features
-- Responsive design for desktop and mobile
+## Features
+- Responsive design 
 - Smooth scrolling navigation
 - Contact information and social media links
 - Skills, projects, and achievements sections
 - Styled buttons and hover effects
+- Clean and semple layout
 
-## 📥 Installation & Setup (Running Locally)
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/your-repo-name.git
+## Challenges
+- Aligning Content Properly 
+- Ensuring that different sections were properly aligned in order to maintain a visually appealing layout.
+- Handling External Links & Icons,  Some icons and images did not display correctly due to incorrect paths, requiring debugging and proper file organization
 
+## Future Improvements
+- Add JavaScript for Interactive Elements (Dark mode toggel)
+- Integrate a Contact Form
+- Video header
