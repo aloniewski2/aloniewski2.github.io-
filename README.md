@@ -1,7 +1,7 @@
 # Andrew Loniewski - Portfolio Website
 
 ##  Project Overview
-This is a personal portfolio website for myself. I am a Computer Science and Finance student at Muhlenberg College. The website showcases skills, projects, achievements, and education while providing an easy way to connect.
+This is a personal portfolio website for myself. I am a Computer Science and Finance student at Muhlenberg College. The website showcases my skills, projects, achievements, and education. 
 
 ## Technologies Used
 - **HTML** - Structure of the website
@@ -17,12 +17,12 @@ This is a personal portfolio website for myself. I am a Computer Science and Fin
 - Contact information and social media links
 - Skills, projects, and achievements sections
 - Styled buttons and hover effects
-- Clean and semple layout
+- Clean and simple layout / UI
 
 ## Challenges
-- Aligning Content Properly 
-- Ensuring that different sections were properly aligned in order to maintain a visually appealing layout.
-- Handling External Links & Icons,  Some icons and images did not display correctly due to incorrect paths, requiring debugging and proper file organization
+- Aligning content properly 
+- Ensuring that different sections were properly aligned in order to give it a visually appealing layout.
+- Some icons and images did not display correctly due to incorrect paths, requiring debugging and proper file organization
 
 ## Future Improvements
 - Add JavaScript for Interactive Elements (Dark mode toggel)
