@@ -314,6 +314,27 @@
         <section id="projects">
             <h2>Projects</h2>
             
+            <!-- CryptoArmor -->
+            <div class="experience-card">
+                <div class="experience-header">
+                    <span class="experience-title">
+                        CryptoArmor
+                        <a href="https://github.com/aloniewski2/CryptoArmor" target="_blank">
+                            <img src="Octicons-mark-github.svg" style="width: 32px; height: 32px; margin-left: 8px; vertical-align: middle; opacity: 0.8; transition: opacity 0.2s;">
+                        </a>
+                    </span>
+                    <span class="experience-date">December 2025</span>
+                </div>
+                <ul>
+                    <li>Designed a pre-transaction risk analysis system for blockchain interactions, evaluating wallet addresses, transactions, and contracts before execution</li>
+                    <li>Implemented deterministic risk scoring pipelines combining account age, transaction history, contract verification status, approval patterns, and behavioral heuristics</li>
+                    <li>Built backend services to analyze calldata and token approval flows, detecting unlimited approvals, known drainer patterns, and anomalous contract interactions</li>
+                    <li>Developed a testnet-safe simulation framework to model common attack vectors (approval drains, phishing contracts, honeypots) without requiring private keys or signatures</li>
+                    <li>Integrated read-only blockchain data pipelines with strict mainnet/testnet separation, enforcing safety guards and environment-level blocking</li>
+                    <li>Implemented audit-friendly data flows and validation layers to ensure correctness, reproducibility, and traceability of risk assessments</li>
+                </ul>
+            </div>
+
             <!-- SolveIT AI -->
             <div class="experience-card">
                 <div class="experience-header">
@@ -331,6 +352,26 @@
                     <li>Implemented real-time web crawling via Firecrawl to fetch verified tutorials and repair guides</li>
                     <li>Built dynamic follow-up questions and an AI chatbot with streaming responses</li>
                     <li>Implemented Capacitor mobile features including camera, geolocation, and cross-platform iOS/Android deployment</li>
+                </ul>
+            </div>
+
+            <!-- ExchangeExplorer -->
+            <div class="experience-card">
+                <div class="experience-header">
+                    <span class="experience-title">
+                        ExchangeExplorer
+                        <a href="https://github.com/aloniewski2/ExchangeExplorer" target="_blank">
+                            <img src="Octicons-mark-github.svg" style="width: 32px; height: 32px; margin-left: 8px; vertical-align: middle; opacity: 0.8; transition: opacity 0.2s;">
+                        </a>
+                    </span>
+                    <span class="experience-date">January 2025</span>
+                </div>
+                <ul>
+                    <li>Designed and implemented a deterministic exchange backend modeling order lifecycle, account balances, locked funds, and trade settlement with strict state invariants</li>
+                    <li>Built a price-time priority matching engine supporting market and limit orders, atomic balance updates, and real-time position and PnL computation</li>
+                    <li>Developed a comprehensive automated testing framework to verify balance conservation, idempotent request handling, rate limiting, and recovery from injected failure scenarios</li>
+                    <li>Implemented protocol-level security controls, including HMAC-signed API requests, nonce-based replay protection, and append-only, hash-chained audit logs for traceability</li>
+                    <li>Instrumented latency and throughput metrics (P50/P95/P99), analyzed bottlenecks, and refactored core logic to improve correctness and reliability under load</li>
                 </ul>
             </div>
 
